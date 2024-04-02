@@ -1,5 +1,5 @@
 # This is a simple code demo for visualising scientific interest in key terms
-# (adapted from https://twitter.com/EShekhova/status/1772925867603165413?s=09, who adapted it from elsewhere)
+# (adapted by Andy Cunliffe from https://twitter.com/EShekhova/status/1772925867603165413?s=09, who adapted it from elsewhere...)
 
 # Step 1 - Load packages ------------------------------------------------
 
