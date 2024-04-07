@@ -15,10 +15,10 @@ library(viridis)
 # Step 2 - Specify keywords ------------------------------------------------
 # (e.g., categories of diet, land management practices, data sources, etc.)
 
-keyword1 <- "vegetarian diet"
-keyword2 <- "low carbohydrate diet"
-keyword3 <- "intermittent fasting"
-keyword4 <- "gluten free diet"
+keyword1 <- "Devon Wildlife Trust"
+keyword2 <- "Beaver"
+keyword3 <- "Castor fiber"
+keyword4 <- "hydrology"
 
 
 # Step 3 - Fetch metrics ------------------------------------------------
@@ -51,8 +51,8 @@ combined_plot <- ggplot(combined_data, aes(x = factor(year), y = (query_hits / a
   geom_col(width = 0.6, alpha = 0.9) +
   theme_minimal() +
   labs(x = "Year", y = "% of all published articles") +
-  ggtitle("Interest of scientists in studying different XXXXXXXXXXXX") +
-  ylim(0, 0.85) +
+  ggtitle("Interest of scientists in studying XXXXXXXXXXXX") +
+  # ylim(0, 0.85) + # NB. the ylim often needs tuning if enabled
   scale_fill_viridis_d() +
   facet_wrap(~keywords, ncol = 2) +
   theme(legend.position = "none",
@@ -65,7 +65,6 @@ combined_plot <- ggplot(combined_data, aes(x = factor(year), y = (query_hits / a
 
 combined_plot
 
-# NB. the ylim often needs tuning!
 
-ggsave("combined_plot.png", plot = combined_plot)
+ggsave("Utility 1 - Visualising scientific interest in key terms/combined_plot.png", plot = combined_plot)
 
