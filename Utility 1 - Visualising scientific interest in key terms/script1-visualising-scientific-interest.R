@@ -1,5 +1,11 @@
 # This is a simple code demo for visualising scientific interest in key terms
 # (adapted by Andy Cunliffe from https://twitter.com/EShekhova/status/1772925867603165413?s=09, who adapted it from elsewhere...)
+# This can be really helpful for developing quantitative summaries to evidence 
+# statements like "there is rising interest in topic X"
+# the europepmc package calls on the Europe PMC database, an archive of > 44 Million
+# scientific outputs. While this is not complete, it’s much larger than PubMed is 
+# has enough for this application. 
+
 
 # Step 1 - Load packages ------------------------------------------------
 
@@ -7,7 +13,7 @@
 # install.packages("tidyverse")
 # install.packages("viridis")
 
-library(europepmc)
+library(europepmc)  # This package is published by https://ropensci.org/, which is really high quality and has a thorough review process.
 library(tidyverse)
 library(viridis)
 
@@ -24,6 +30,10 @@ keyword4 <- "hydrology"
 # Step 3 - Fetch metrics ------------------------------------------------
 # Use the europepmc package to query the Europe PubMed Central RESTful Web Service to 
 # fetch the number of publications with specific keywords for each year. 
+# Note that the search arguments can be much more nuanced through targeting particular 
+# parts of source documents (e.g., titles, abstracts (via "abstract: my-keywords"),
+# funders) and/or use of Boolean operators (e.g., and, or, etc.). 
+# For more information see https://docs.ropensci.org/europepmc/.
 
 trend_1 <- europepmc::epmc_hits_trend(query = keyword1,
                                         period = 1995:2023, synonym = FALSE)
@@ -66,5 +76,5 @@ combined_plot <- ggplot(combined_data, aes(x = factor(year), y = (query_hits / a
 combined_plot # Display output
 
 
-ggsave("Utility 1 - Visualising scientific interest in key terms/combined_plot.png", plot = combined_plot)
+ggsave("Utility 1 - Visualising scientific interest in key terms/combined_plot.jpg", plot = combined_plot)
 
