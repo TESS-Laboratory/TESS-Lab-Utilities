@@ -6,3 +6,5 @@
 ## Utility 2) Extracting EXIF parameters from image metadata 
 
 ## Utility 3) R package number of downloads (useful for checking package popularity!) https://www.datasciencemeta.com/rpackages
+
+## Utility 4) Webscraping (Example from TIST not yet public https://github.com/TESS-Laboratory/tist-web-scrape) 
