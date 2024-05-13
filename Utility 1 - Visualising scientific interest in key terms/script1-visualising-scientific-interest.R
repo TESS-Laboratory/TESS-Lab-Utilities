@@ -63,7 +63,7 @@ combined_plot <- ggplot(combined_data, aes(x = factor(year), y = (query_hits / a
         panel.grid.minor = element_blank())+
   scale_x_discrete(labels = function(x) ifelse(seq_along(x) %% 2 == 1, x, ""))
 
-combined_plot
+combined_plot # Display output
 
 
 ggsave("Utility 1 - Visualising scientific interest in key terms/combined_plot.png", plot = combined_plot)
