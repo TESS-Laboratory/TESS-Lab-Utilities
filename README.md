@@ -3,7 +3,7 @@
 
 ## Utility 1) Visualising scientific interest in key terms
 
-## Utility 2) Extracting EXIF parameters from image metadata 
+## Utility 2) Extracting EXIF parameters from image metadata (esp. camera locations from DJI drone images)
 
 ## Utility 3) R package number of downloads (useful for checking package popularity!) https://www.datasciencemeta.com/rpackages
 
