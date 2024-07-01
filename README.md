@@ -1,15 +1,18 @@
 # TESS Lab Utilities
-## This repo contains assorted utility scripts for useful things
+## Assorted utility scripts for useful things
 
-### Utility 1) Visualising scientific interest in key terms
+### Utility 1) Visualising scientific interest in key terms.
 
-### Utility 2) Extracting pages as images from PDFs (esp. for including publications in theses)
+### Utility 2) Extracting pages as images from PDFs 
+This script generates a png image file for each page of a PDF document. Handy for inserting your published manuscripts into your thesis!
 
-### Utility 3) Extracting EXIF parameters from image metadata (esp. camera locations from DJI drone images)
+### Utility 3) Extracting EXIF parameters from image metadata 
+Handy for extracting camera locations from DJI drone images.
 
-### Utility 4) R package number of downloads (useful for checking package popularity!) https://www.datasciencemeta.com/rpackages
+### Utility 4) R package number of downloads https://www.datasciencemeta.com/rpackages
+Useful for checking package popularity!
 
 ### Utility 5) Webscraping (Example from TIST not yet public https://github.com/TESS-Laboratory/tist-web-scrape) 
 
 
-# How to contribute...
+# WORK IN PROGRESS How to contribute via pull requests...
