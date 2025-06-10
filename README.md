@@ -8,7 +8,7 @@ Code for creating a bespoke theme in ggplot2 that makes it much easier to produc
 Based on an efficient search of the europepmc database.
 
 ### Utility 3) Extracting pages as images from PDFs 
-This script generates a png image file for each page of a PDF document. Handy for inserting your published manuscripts into a thesis!
+This script generates a png image file for each page of a PDF document. Handy for inserting published manuscripts into a thesis!
 
 ### Utility 4) Extracting EXIF parameters from image metadata 
 Handy for extracting camera locations from DJI drone images.
